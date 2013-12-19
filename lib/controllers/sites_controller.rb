@@ -10,12 +10,12 @@ module Ping200
           array_hash = StorageAdapter::SitesAdapter.new.all
 
           array_hash.map do | hash |
-            Model::SitesObject.new hash
+            Models::SiteObject.new hash
           end
         end
 
         def add website
-          model = Models::SiteModel.new({
+          model = Models::SiteObject.new({
             website: website.to_s
           })
 
@@ -29,7 +29,7 @@ module Ping200
         def get key
           hash = StorageAdapter::SitesAdapter.new.get key
 
-          Model::SitesObject.new hash
+          Models::SiteObject.new hash
         end
       end
     end
