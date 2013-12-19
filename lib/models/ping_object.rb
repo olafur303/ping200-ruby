@@ -23,7 +23,7 @@ module Ping200
           website:       website,
           timestamp:     timestamp,
           ping:          ping,
-          response_time: responsetime
+          response_time: response_time
         }
       end
     end
