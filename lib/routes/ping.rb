@@ -9,8 +9,8 @@ module Ping200
         end
 
         app.get '/ping' do
-          halt 500 unless params[:website]
-          objects = Controller::PingObjectController.get params[:website]
+          halt 500 unless params[:key]
+          objects = Controller::PingObjectController.get params[:key]
           json objects.map { |o| o.to_h }
         end
       end
