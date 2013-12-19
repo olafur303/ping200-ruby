@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <title>Ping200 - Login</title>
+
+  <!-- Stylesheets -->
+   <style>
+       @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+       body{
+           background:#f5f1e9;
+           font-family:'Open Sans';
+       }
+       #block,#option{
+           width:230px;
+           height:113px;
+           margin:auto;
+       }
+       #block{
+           background:#ff6860;
+           margin-top:100px;
+       }
+       #block:before{
+           content:'';
+           display:block;
+           width:230px;
+           height:3px;
+       }
+       #block:after{
+           content:'';
+           display:block;
+
+           width: 0;
+           height: 0;
+           border-left: 12px solid transparent;
+           border-right: 12px solid transparent;
+           border-top: 12px solid #ff6860;
+
+
+           margin:21px 18px;
+           position:absolute;
+       }
+       #block label, #submit{
+           margin:-5px -16px;
+           position:relative;
+           width:33px;
+           height:34px;
+           background:#dedede;
+           text-align:center;
+           line-height:2.2;
+           color:#857487;
+           border-top-left-radius:2px;
+           border-bottom-left-radius:2px;
+       }
+       #block label#pass{
+           position:absolute;
+           width:33px;
+           height:34px;
+           background:#dedede;
+           margin:-5px 15px;
+       }
+       #submit{
+           border:0;
+           border-top-left-radius:0px;
+           border-bottom-left-radius:0px;
+           border-top-right-radius:2px;
+           border-bottom-right-radius:2px;
+           font-family:'Open Sans';
+           background:#ffab60;
+
+           font-size:12px;
+           line-height:2.8;
+           padding:0;
+       }
+       #submit:hover{
+           background:#ffa14c;
+       }
+       #block input[type=text],#block  input[type=password], #option p {
+           font-family:'Open Sans';
+           font-weight:300;
+           -webkit-font-smoothing: antialiased;
+       }
+       #block input[type=text],#block  input[type=password]{
+           width:187px;
+           height:32px;
+           margin:15px 15px;
+           border:0;
+           border-radius:2px;
+           outline:0;
+           display:block;
+           font-size:15px;
+       }
+       #block input[type=password]{
+           width:156px;
+           height:32px;
+           margin:-5px 15px;
+       }
+       #submit{
+           color:#fff;font-size:8px;font-weight:bold;
+       }
+
+       #option p{
+           color:#ff6860;
+           z-index: -1;
+
+           font-size:24px;
+           text-transform:uppercase;
+           padding:0px 2px;
+           margin-top:10px;
+           display:block;
+           float:left;
+           -webkit-font-smoothing: antialiased;
+
+       }
+       input{padding-left:10px;}
+
+   </style>
+  <!-- Optimize for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=.0"/>
+</head>
+<body>
+<form id="form" name="form" action="#" method="post">
+  <div id="block">
+    <input type="text" name="name" id="name" placeholder="Användarnamn"/>
+    <input style="float:left; display:inline;" type="password" name="password" id="password" placeholder="Lösenord"/>
+    <input style="float:left; display:inline;" type="submit" id="submit" name="submit" value="▶"/>
+    <div style="clear: both;"></div>
+  </div>
+</form>
+<div id="option">
+  <p>ping200</p>
+</div>
+</body>
+</html>
