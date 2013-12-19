@@ -1,6 +1,6 @@
 module Ping200
   module Models
-    #PORO for containing ping information
+    #PORO for containing site information
     class SiteObject
 
       attr_accessor :key, :website
